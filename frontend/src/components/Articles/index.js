@@ -9,7 +9,7 @@ const Articles = ({ articles }) => {
   return (
     <div>
 
-      <div className="ui centered two column grid">
+      <div className="ui segment">
 
         <div>
           {leftArticles.map((article, i) => {

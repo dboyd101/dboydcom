@@ -17,12 +17,12 @@ const Article = () => {
             : process.env.REACT_APP_BACKEND_URL + article.image.url;
         return (
           <div>
-            <div className="ui segment">
+            <div className="ui container">
             <img src={imageUrl} className="ui big image centered"/>
               <h1 class="ui header centered">{article.title}</h1>
             </div>
 
-            <div className="ui segment">
+            <div className="ui container">
               <div className="ui text">
                 <ReactMarkdown source={article.content} />
                 <p>
@@ -35,6 +35,7 @@ const Article = () => {
       }}
     </Query>
   );
+
 };
 
 export default Article;

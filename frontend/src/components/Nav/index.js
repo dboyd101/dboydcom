@@ -13,7 +13,9 @@ const Nav = () => {
                         <div>
                             <nav className="">
                                 <div className="">
+                                    <Link to={'/'}>
                                     <h1 className="ui inverted header">davidboyd</h1>
+                                    </Link>
                                 </div>
                                 <div className="ui inverted white center aligned compact menu">
                                     {categories.map((category, i) => {

@@ -554,6 +554,9 @@
                 },
                 "category": {
                   "type": "string"
+                },
+                "Slug": {
+                  "type": "string"
                 }
               }
             }

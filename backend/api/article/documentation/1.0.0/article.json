@@ -615,6 +615,9 @@
                 }
               }
             }
+          },
+          "Slug": {
+            "type": "string"
           }
         }
       },
@@ -635,6 +638,9 @@
             "type": "string"
           },
           "category": {
+            "type": "string"
+          },
+          "Slug": {
             "type": "string"
           }
         }

@@ -7,15 +7,12 @@ const Card = ({ article }) => {
       ? article.image.url
       : process.env.REACT_APP_BACKEND_URL + article.image.url;
   return (
-    <Link to={`/article/${article.id}`} className="ui card">
+    <Link to={`/article/${article.id}`} className="">
       <div className="ui card">
-        <div className="image">
+        <div className="ui medium rounded image">
           <img src={imageUrl} alt={article.image.url} height="100" />
         </div>
-        <div className="content">
-          <p className="description">
-            {article.category.name}
-          </p>
+        <div className="four wide column">
           <p className="description">
             {article.title}
           </p>
