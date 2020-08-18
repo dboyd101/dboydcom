@@ -1,0 +1,4 @@
+@compactGutterWidth: 1rem;
+@veryCompactGutterWidth: .5rem;
+@compactRowSpacing: 1rem;
+@veryCompactRowSpacing: .5rem;

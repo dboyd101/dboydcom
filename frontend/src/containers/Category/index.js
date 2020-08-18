@@ -12,13 +12,12 @@ const Category = () => {
       {({ data: { category } }) => {
         return (
           <div>
-            <div className="ui segments">
-              <div className="uk container large">
+
+              <div className="ui  container">
                 <h1>{category.name}</h1>
                 <Articles articles={category.articles} />
               </div>
             </div>
-          </div>
         );
       }}
     </Query>

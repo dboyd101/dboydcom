@@ -5,19 +5,17 @@ import ARTICLES_QUERY from "../../queries/article/articles";
 import '../../index.css';
 
 const Home = () => {
-  return (
-    <div>
-      <div className="section">
-        <div className="container">
-          <Query query={ARTICLES_QUERY}>
-            {({ data: { articles } }) => {
-              return <Articles articles={articles} />;
-            }}
-          </Query>
+    return (
+        <div>
+            <div className="ui container">
+                <Query query={ARTICLES_QUERY}>
+                    {({data: {articles}}) => {
+                        return <Articles articles={articles}/>;
+                    }}
+                </Query>
+            </div>
         </div>
-      </div>
-    </div>
-  );
+    );
 };
 
 export default Home;

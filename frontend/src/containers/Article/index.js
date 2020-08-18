@@ -17,6 +17,14 @@ const Article = () => {
             : process.env.REACT_APP_BACKEND_URL + article.image.url;
         return (
           <div>
+
+
+            {/*
+           USE THIS FOR EDITING THE STYLE OF INDIVIDUAL ARTICLES
+            */}
+
+
+
             <div className="ui container">
             <img src={imageUrl} className="ui big image centered"/>
               <h1 class="ui header centered">{article.title}</h1>
